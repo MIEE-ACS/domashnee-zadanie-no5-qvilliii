@@ -1,0 +1,30 @@
+﻿<Window x:Class="DZ5DIN.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DZ5DIN"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Уравнение вида ax^2+bx+c=0&#xD;&#xA;введите a ,.b ,c:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,32,0,0" RenderTransformOrigin="0.5,0.5" Width="183" Height="44">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.753"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <TextBox x:Name="tA" HorizontalAlignment="Left" Height="27" TextWrapping="Wrap" VerticalAlignment="Top" Width="35" Margin="10,81,0,0"/>
+        <TextBox x:Name="tC" HorizontalAlignment="Left" Height="27" TextWrapping="Wrap" VerticalAlignment="Top" Width="35" Margin="90,81,0,0"/>
+        <TextBox x:Name="tB" HorizontalAlignment="Left" Height="27" TextWrapping="Wrap" VerticalAlignment="Top" Width="35" Margin="50,81,0,0"/>
+        <TextBox x:Name="tall" HorizontalAlignment="Left" Height="245" TextWrapping="Wrap" VerticalAlignment="Top" Width="396" Margin="10,164,0,0"/>
+        <Button Content="все уравнения" HorizontalAlignment="Left" VerticalAlignment="Top" Width="152" Margin="71,131,0,0" Height="28" Click="Button_Click_1"/>
+        <Button Content="вычислить корни" HorizontalAlignment="Left" VerticalAlignment="Top" Width="62" Margin="149,81,0,0" Height="27" Click="Button_Click"/>
+        <Label x:Name="tanswer" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="228,81,0,0" RenderTransformOrigin="0.542,0.32" Height="27" Width="398"/>
+        <Button Content="очистить данные" HorizontalAlignment="Left" VerticalAlignment="Top" Width="107" Margin="422,389,0,0" Click="Button_Click_2"/>
+
+    </Grid>
+</Window>
